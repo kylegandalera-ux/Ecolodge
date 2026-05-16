@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ecolodge H100 | Azure Haven Hotel",
+  title: "H100 Ecolodge",
   description:
-    "A premium hotel booking website for browsing rooms, checking availability, and submitting booking requests."
+    "A responsive hotel booking website for H100 Ecolodge in Baguio City."
 };
 
 export default function RootLayout({
   children
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">

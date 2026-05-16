@@ -21,7 +21,9 @@ export default function RoomCard({ room }: { room: Room }) {
             <p className="mt-2 text-sm leading-6 text-slate-600">{room.description}</p>
           </div>
           <div className="text-right">
-            <p className="font-display text-2xl font-semibold text-gold">${room.price}</p>
+            <p className="font-display text-2xl font-semibold text-gold">
+              PHP {room.price.toLocaleString()}
+            </p>
             <p className="text-xs text-slate-500">per night</p>
           </div>
         </div>

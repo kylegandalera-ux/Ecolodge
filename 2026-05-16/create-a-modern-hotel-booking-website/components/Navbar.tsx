@@ -21,9 +21,9 @@ export default function Navbar() {
       <nav className="container-pad flex h-20 items-center justify-between">
         <Link href="/" className="group" onClick={() => setIsOpen(false)}>
           <span className="block font-display text-2xl font-semibold leading-none">
-            Ecolodge H100
+            H100 Ecolodge
           </span>
-          <span className="text-xs uppercase tracking-[0.32em] text-gold">Azure Haven</span>
+          <span className="text-xs uppercase tracking-[0.32em] text-gold">Baguio City</span>
         </Link>
 
         <div className="hidden items-center gap-1 lg:flex">

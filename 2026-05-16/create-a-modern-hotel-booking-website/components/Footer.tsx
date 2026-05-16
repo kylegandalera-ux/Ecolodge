@@ -7,9 +7,9 @@ export default function Footer() {
     <footer className="bg-navy text-white">
       <div className="container-pad grid gap-10 py-14 md:grid-cols-[1.2fr_0.8fr_1fr_0.8fr]">
         <div>
-          <h2 className="font-display text-3xl font-semibold">Ecolodge H100</h2>
+          <h2 className="font-display text-3xl font-semibold">H100 Ecolodge</h2>
           <p className="mt-3 max-w-sm text-sm leading-6 text-white/70">
-            Home of Azure Haven Hotel, where relaxed luxury meets attentive hospitality.
+            Comfortable Baguio rooms with complimentary breakfast and straightforward booking requests.
           </p>
         </div>
         <div>
@@ -28,9 +28,9 @@ export default function Footer() {
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-gold">Contact</h3>
           <div className="mt-4 space-y-2 text-sm text-white/70">
-            <p>123 Azure Bay Avenue, City Placeholder</p>
-            <p>+1 (000) 123-4567</p>
-            <p>reservations@azurehaven.example</p>
+            <p>#358 Lower Magsaysay Avenue, ENDCP Compound, Baguio City</p>
+            <p>074-248-2209 / 0930-1509-846</p>
+            <p>health100resto@gmail.com</p>
           </div>
         </div>
         <div>
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-xs text-white/55">
-        Copyright © 2026 Ecolodge H100. All rights reserved.
+        Copyright © 2026 H100 Ecolodge. All rights reserved.
       </div>
     </footer>
   );

@@ -4,7 +4,7 @@ export type Room = {
   description: string;
   price: number;
   maxGuests: number;
-  type: "Classic" | "Premium" | "Suite";
+  type: "Standard" | "Triple" | "Executive" | "Family";
   amenities: string[];
   image: string;
 };
@@ -14,48 +14,44 @@ export const rooms: Room[] = [
     name: "Standard Room",
     slug: "standard-room",
     description:
-      "A refined retreat with warm finishes, soft linens, and everything needed for an effortless city escape.",
-    price: 145,
+      "A simple, comfortable room with 1 single bed and 1 double bed, ideal for two guests.",
+    price: 1500,
     maxGuests: 2,
-    type: "Classic",
-    amenities: ["Queen bed", "Rain shower", "Work desk", "Smart TV"],
-    image:
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=80"
+    type: "Standard",
+    amenities: ["1 single bed", "1 double bed", "Complimentary breakfast", "Private room"],
+    image: "/images/standard-executive-room.jpeg"
   },
   {
-    name: "Deluxe Room",
-    slug: "deluxe-room",
+    name: "Triple Room",
+    slug: "triple-room",
     description:
-      "A spacious room with lounge seating, upgraded bath amenities, and a calm palette inspired by the coast.",
-    price: 210,
+      "A practical room arranged with 3 single beds for friends, colleagues, or small groups.",
+    price: 2000,
     maxGuests: 3,
-    type: "Premium",
-    amenities: ["King bed", "City view", "Espresso bar", "Soaking tub"],
-    image:
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80"
+    type: "Triple",
+    amenities: ["3 single beds", "Complimentary breakfast", "Group-friendly", "Private room"],
+    image: "/images/family-room.jpeg"
   },
   {
-    name: "Family Suite",
-    slug: "family-suite",
+    name: "Executive Room",
+    slug: "executive-room",
     description:
-      "Generous living space for family stays, with flexible sleeping arrangements and thoughtful storage.",
-    price: 320,
-    maxGuests: 5,
-    type: "Suite",
-    amenities: ["Two bedrooms", "Living room", "Mini pantry", "Kids amenities"],
-    image:
-      "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80"
+      "A spacious option with 1 single bed and 1 queen bed for a comfortable two-person stay.",
+    price: 1800,
+    maxGuests: 2,
+    type: "Executive",
+    amenities: ["1 single bed", "1 queen bed", "Complimentary breakfast", "Private room"],
+    image: "/images/standard-executive-room.jpeg"
   },
   {
-    name: "Executive Suite",
-    slug: "executive-suite",
+    name: "Family Room",
+    slug: "family-room",
     description:
-      "A polished suite with a separate lounge, premium views, and tailored touches for business or celebration.",
-    price: 460,
+      "A larger room with 2 queen beds and 1 single bed, made for families and shared stays.",
+    price: 2500,
     maxGuests: 4,
-    type: "Suite",
-    amenities: ["Private lounge", "Balcony", "Butler-ready service", "Luxury bath"],
-    image:
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=80"
+    type: "Family",
+    amenities: ["2 queen beds", "1 single bed", "Complimentary breakfast", "Private room"],
+    image: "/images/family-room.jpeg"
   }
 ];

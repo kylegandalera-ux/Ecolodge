@@ -16,7 +16,7 @@ export default function ContactPage() {
       <div className="container-pad">
         <div className="mb-10 max-w-3xl">
           <p className="eyebrow">Contact</p>
-          <h1 className="section-title mt-3">Speak with the Azure Haven team.</h1>
+          <h1 className="section-title mt-3">Speak with the H100 Ecolodge team.</h1>
           <p className="mt-5 text-lg leading-8 text-slate-600">
             Use the details below or send a message for group stays, special requests, or help planning your visit.
           </p>
@@ -28,20 +28,29 @@ export default function ContactPage() {
               <h2 className="font-display text-3xl font-semibold text-navy">Hotel Details</h2>
               <div className="mt-5 space-y-4 text-sm leading-6 text-slate-600">
                 <p>
-                  <span className="font-semibold text-navy">Address:</span> 123 Azure Bay Avenue, City Placeholder
+                  <span className="font-semibold text-navy">Address:</span> #358 Lower Magsaysay Avenue,
+                  ENDCP Compound, Baguio City
                 </p>
                 <p>
-                  <span className="font-semibold text-navy">Phone:</span> +1 (000) 123-4567
+                  <span className="font-semibold text-navy">Phone:</span> 074-248-2209 / 0930-1509-846
                 </p>
                 <p>
-                  <span className="font-semibold text-navy">Email:</span> reservations@azurehaven.example
+                  <span className="font-semibold text-navy">Email:</span> health100resto@gmail.com
+                </p>
+                <p>
+                  <span className="font-semibold text-navy">Check-in:</span> 2 PM
+                </p>
+                <p>
+                  <span className="font-semibold text-navy">Check-out:</span> 12 PM
                 </p>
               </div>
             </div>
             <div className="flex min-h-72 items-center justify-center rounded-[2rem] border border-dashed border-gold/60 bg-white p-8 text-center shadow-sm">
               <div>
                 <p className="font-display text-2xl font-semibold text-navy">Google Maps Placeholder</p>
-                <p className="mt-2 text-sm text-slate-500">Embed your official hotel map here before launch.</p>
+                <p className="mt-2 text-sm text-slate-500">
+                  Embed the map for #358 Lower Magsaysay Avenue, ENDCP Compound, Baguio City.
+                </p>
               </div>
             </div>
           </div>

@@ -6,37 +6,37 @@ import { rooms } from "@/data/rooms";
 
 const amenities = [
   {
-    title: "Spa & Wellness",
-    description: "Quiet treatment rooms, steam rituals, and restorative therapies inspired by coastal living.",
+    title: "Complimentary Breakfast",
+    description: "Every room rate includes breakfast, keeping mornings easy before heading around Baguio.",
     icon: "✦"
   },
   {
-    title: "Signature Dining",
-    description: "Seasonal menus, private tables, and polished service from breakfast through late evening.",
+    title: "Baguio City Location",
+    description: "Find us at #358 Lower Magsaysay Avenue, ENDCP Compound, Baguio City.",
     icon: "◆"
   },
   {
-    title: "Pool Terrace",
-    description: "A serene outdoor deck with shaded loungers, chilled towels, and golden-hour views.",
+    title: "Easy Stay Schedule",
+    description: "Check-in starts at 2 PM and check-out is 12 PM, with early check-in available by request.",
     icon: "●"
   }
 ];
 
 const testimonials = [
   {
-    quote: "Every detail felt considered, from the welcome drink to the turn-down service.",
-    name: "Mara Collins",
-    detail: "Weekend guest"
+    quote: "A clean, practical room and a convenient Baguio location made the stay very easy.",
+    name: "Recent guest",
+    detail: "Standard Room"
   },
   {
-    quote: "The Executive Suite was calm, spacious, and perfect for hosting clients between meetings.",
-    name: "Daniel Reyes",
-    detail: "Business traveler"
+    quote: "The included breakfast and friendly assistance were exactly what we needed for a short trip.",
+    name: "Returning visitor",
+    detail: "Executive Room"
   },
   {
-    quote: "Our family had room to breathe, and the staff made the stay beautifully easy.",
-    name: "Sofia Nguyen",
-    detail: "Family suite guest"
+    quote: "The family room setup worked well for our group, with enough beds for everyone.",
+    name: "Family traveler",
+    detail: "Family Room"
   }
 ];
 
@@ -45,19 +45,22 @@ export default function HomePage() {
     <>
       <section className="relative min-h-[calc(100vh-5rem)] overflow-hidden bg-navy text-white">
         <img
-          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1800&q=85"
-          alt="Luxury hotel pool and exterior"
+          src="/images/family-room.jpeg"
+          alt="H100 Ecolodge family room"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/60 to-navy/15" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/55 to-navy/10" />
         <div className="container-pad relative flex min-h-[calc(100vh-5rem)] items-center py-24">
           <div className="max-w-3xl">
-            <p className="eyebrow">Ecolodge H100</p>
+            <p className="eyebrow">Baguio City stay</p>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-tight sm:text-6xl lg:text-7xl">
-              Azure Haven Hotel
+              H100 Ecolodge
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-8 text-white/85">
-              Relax, Stay, and Experience Comfort
+              Clean, comfortable rooms with complimentary breakfast near Lower Magsaysay Avenue.
+            </p>
+            <p className="mt-4 text-sm font-semibold uppercase tracking-[0.22em] text-gold">
+              Room rates from PHP 1,500 per night
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link href="/booking" className="premium-button bg-gold text-navy hover:bg-[#d9b65c]">
@@ -78,12 +81,12 @@ export default function HomePage() {
         <div className="container-pad grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div>
             <p className="eyebrow">Welcome</p>
-            <h2 className="section-title mt-3">A polished escape with a softer sense of luxury.</h2>
+            <h2 className="section-title mt-3">A simple and comfortable place to stay in Baguio.</h2>
           </div>
           <p className="text-lg leading-8 text-slate-600">
-            Azure Haven Hotel pairs elegant rooms, thoughtful amenities, and attentive service with the
-            calm of a private retreat. Whether you are booking a quiet weekend, a family stay, or a
-            business trip with room to breathe, our team keeps every detail effortless.
+            H100 Ecolodge offers practical rooms for couples, friends, families, and small groups. Each
+            room includes complimentary breakfast, clear nightly rates, and an easy booking request form
+            so guests can check availability before arrival.
           </p>
         </div>
       </section>
@@ -93,14 +96,14 @@ export default function HomePage() {
           <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <div>
               <p className="eyebrow">Featured Rooms</p>
-              <h2 className="section-title mt-3">Suites and rooms made for unhurried stays.</h2>
+              <h2 className="section-title mt-3">Rooms with clear rates and breakfast included.</h2>
             </div>
             <Link href="/rooms" className="premium-button border border-navy text-navy hover:bg-navy hover:text-white">
               Explore All Rooms
             </Link>
           </div>
           <div className="grid gap-8 lg:grid-cols-2">
-            {rooms.slice(1, 3).map((room) => (
+            {rooms.slice(0, 2).map((room) => (
               <RoomCard key={room.slug} room={room} />
             ))}
           </div>
@@ -111,7 +114,7 @@ export default function HomePage() {
         <div className="container-pad">
           <div className="mx-auto mb-10 max-w-3xl text-center">
             <p className="eyebrow">Amenities</p>
-            <h2 className="section-title mt-3">The comforts guests remember.</h2>
+            <h2 className="section-title mt-3">Helpful details for a smoother stay.</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {amenities.map((amenity) => (
@@ -125,7 +128,7 @@ export default function HomePage() {
         <div className="container-pad">
           <div className="mb-10">
             <p className="eyebrow">Testimonials</p>
-            <h2 className="section-title mt-3">Guests speak warmly of the details.</h2>
+            <h2 className="section-title mt-3">Guest-friendly rooms for real Baguio trips.</h2>
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
             {testimonials.map((testimonial) => (
@@ -140,7 +143,7 @@ export default function HomePage() {
           <div>
             <p className="eyebrow">Ready when you are</p>
             <h2 className="mt-3 max-w-2xl font-display text-4xl font-semibold">
-              Reserve your next stay at Azure Haven Hotel.
+              Send a booking request to H100 Ecolodge.
             </h2>
           </div>
           <Link href="/booking" className="premium-button bg-gold text-navy hover:bg-[#d9b65c]">

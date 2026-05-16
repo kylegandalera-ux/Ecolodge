@@ -6,9 +6,9 @@ import RoomCard from "@/components/RoomCard";
 
 const priceRanges = [
   { label: "All prices", min: 0, max: Infinity },
-  { label: "Under $200", min: 0, max: 199 },
-  { label: "$200 - $350", min: 200, max: 350 },
-  { label: "$350+", min: 351, max: Infinity }
+  { label: "Under PHP 1,800", min: 0, max: 1799 },
+  { label: "PHP 1,800 - 2,200", min: 1800, max: 2200 },
+  { label: "PHP 2,300+", min: 2300, max: Infinity }
 ];
 
 export default function RoomsFilter() {
@@ -30,7 +30,7 @@ export default function RoomsFilter() {
         <label>
           <span className="mb-2 block text-sm font-semibold text-navy">Room Type</span>
           <select className="premium-input" value={type} onChange={(event) => setType(event.target.value)}>
-            {["All", "Classic", "Premium", "Suite"].map((item) => (
+            {["All", "Standard", "Triple", "Executive", "Family"].map((item) => (
               <option key={item} value={item}>
                 {item}
               </option>
