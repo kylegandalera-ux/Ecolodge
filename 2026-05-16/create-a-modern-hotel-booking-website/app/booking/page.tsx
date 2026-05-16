@@ -11,7 +11,7 @@ export default function BookingPage() {
       <div className="container-pad grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
         <div>
           <p className="eyebrow">Booking Request</p>
-          <h1 className="section-title mt-3">Check availability for your Azure Haven stay.</h1>
+          <h1 className="section-title mt-3">Check availability for your Ecolodge stay.</h1>
           <p className="mt-5 text-lg leading-8 text-slate-600">
             Submit your preferred room, dates, and guest details. This form creates a booking request only;
             our reservations team will confirm availability and next steps.
