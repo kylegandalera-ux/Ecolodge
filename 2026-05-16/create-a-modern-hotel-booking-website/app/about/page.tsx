@@ -26,10 +26,10 @@ export default function AboutPage() {
         <div className="container-pad grid gap-10 lg:grid-cols-2">
           <div className="rounded-[2rem] bg-white p-8 shadow-soft">
             <p className="eyebrow">Hotel Story</p>
-            <h2 className="mt-3 font-display text-3xl font-semibold text-navy">Azure Haven Hotel</h2>
+            <h2 className="mt-3 font-display text-3xl font-semibold text-navy">Ecolodge H100</h2>
             <p className="mt-4 leading-7 text-slate-600">
               Ecolodge H100 was imagined as a quieter kind of luxury: beautiful spaces, natural textures,
-              considered service, and rooms that make travel feel less hurried. Azure Haven Hotel brings
+              considered service, and rooms that make travel feel less hurried. Ecolodge H100 brings
               together boutique hospitality and the ease of a modern booking experience.
             </p>
           </div>
